@@ -1,0 +1,81 @@
+/* AboutUs.css */
+.about-us-section {
+    background: linear-gradient(to right, #222831, #393e46);
+    color: #eeeeee;
+    padding: 60px 0;
+    min-height: 100vh; /* Full screen height */
+    width: 100vw; /* Full screen width */
+    overflow-x: hidden;
+  }
+  
+  /* Top Bar */
+  .about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center it better */
+  }
+  
+  .about-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #00adb5;
+  }
+  
+  /* Underline */
+  .underline {
+    width: 50px;
+    height: 4px;
+    background-color: #00adb5;
+    margin-top: 8px;
+    border-radius: 10px;
+  }
+  
+  /* Content */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #eeeeee;
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
+  .about-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Small Screens */
+  @media (max-width: 768px) {
+    .about-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-logo {
+      margin-bottom: 10px;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .underline {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

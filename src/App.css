@@ -1,0 +1,40 @@
+/* App.css */
+.app-container {
+  overflow-x: hidden;
+}
+
+/* Fix for video background */
+.video-section {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 1.8rem;
+    left: 5%;
+    text-align: center;
+  }
+}
